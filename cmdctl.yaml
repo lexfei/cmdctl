@@ -1,0 +1,10 @@
+db:
+  username: micro
+  password: micro
+  addr: xx.xx.xx.xx:3306
+  name: db_micro2
+fileserver:
+  server: xx.xx.xx.xx:6664 # http server的地址和端口
+  timeout: 2 # 连接http server的超时时间
+  username: micro # http server注册的用户名
+  password: micro # http server注册的密码
