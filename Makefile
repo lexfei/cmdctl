@@ -18,7 +18,11 @@ gotool:
 	@-go tool vet . |& grep -v vendor
 
 cmd: clean
+ifneq (${name},)
 	$(call cmd)
+else
+	@echo "Please specify the command name, like: make cmd name=newctl"
+endif
 
 install: all
 	$(call install)
