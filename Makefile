@@ -15,7 +15,7 @@ all:
 gotool:
 	@echo formating ...
 	@-gofmt -w  .
-	@-go tool vet . |& grep -v vendor
+	@-go tool vet . |& grep -v vendor;true
 
 cmd: clean
 ifneq (${name},)
